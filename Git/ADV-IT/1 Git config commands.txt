@@ -1,0 +1,16 @@
+	git config --global user.name 'Yaroslav Andreyev'
+	git config --global user.email 'yaras.andreev@gmail.com'
+
+
+Делаем инициализацию в Git, имя и почта которые будут отображаться везде в коммите, бекапе и др.
+Проверка:
+	git config -l
+
+
+
+Действия в PowerShell для проверки
+	cd C:\Users\Yaroslav			переход в папку
+	dir								покажет содержимого папки
+	dir -force						покажет	содержимое и скрутую часть (dir -recurse -force)
+	type .gitconfig					показ файла и его внутренностей
+	.\file1.txt						команда открыть файл (если пробелы C:\Новая` папка\Test` File.txt)

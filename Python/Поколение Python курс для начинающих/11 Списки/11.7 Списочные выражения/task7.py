@@ -1,0 +1,1 @@
+[print(i, end='\n') for i in input().split()]

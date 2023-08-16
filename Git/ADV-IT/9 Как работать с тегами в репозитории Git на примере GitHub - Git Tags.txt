@@ -1,0 +1,82 @@
+Обычно tag помечается в основной ветки, для отслеживания изменений версий.
+Tag для пометки коммита, для определения его важности и описания.
+	git branch 
+	git log --pretty=oneline					log в аккуратном виде
+
+
+Помечаем tag как первая версия
+	делаем изменения в репозитории
+	git add .
+	git status
+	git commit -m "Added something"
+	git push 	 
+
+	git tag										проверка на теги
+	git tag v1.0.0								тег в текушем коммите
+	git push origin v1.0.0						пуш тега в Github
+	Можно проверить в Github 
+
+
+	делаем изменения в репозитории
+	git add .
+	git commit -m "Added something2"
+	git push
+	git log --pretty=oneline
+	git tag v1.0.1
+	git tag
+	git log --pretty=oneline
+	git push origin v1.0.1
+
+
+
+Изменения в новом branch и пометка tag
+	git checkout -b имя_ветки
+	делаем изменения в репозитории
+	git add .
+	git commit -m "Added something"
+	git push origin имя_ветки
+	git tag
+	git tag v1.1.0
+	git push origin v1.1.0
+
+
+	git tag -d v1.1.0							удаление тега локально
+	git push origin --delete v1.1.0				удаление тега на Github
+
+
+Пометим версию
+	git chekout main
+	git pull									скачиваем обновления из main
+	git branch -D имя_ветки
+	git tag
+	git tag v1.2.0
+	git tag
+	git push origin v1.2.0
+
+
+Переход на commit с определенной (версией) пометкой tag 
+	git log --pretty=oneline
+	git checkout v1.0.0							переход на commit с тегом v1.0.0 
+	git branch
+	git checkout main							возврат на самое начало	main				
+
+
+Как сделать tag если уже сделан commit
+	делаем изменения в репозитории
+	git add .
+	git commit -m "Added something"
+	git log --pretty=oneline
+	git tag -a v1.5.0 хеш_номер_коммита
+	делаем тег в коммите
+	git log --pretty=oneline
+
+
+Если забыли запушить теги и сделали последний тег
+	делаем изменения в репозитории
+	git add .
+	git commit -m "Added something"
+	git status
+	git tag v2.0.0
+	git tag
+
+	git push origin --tags						запушить все теги которых до этого не было

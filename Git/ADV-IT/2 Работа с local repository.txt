@@ -1,17 +1,17 @@
-mkdir myproject							создаем директорую
-cd myproject/							заходим в директорию
-myproject git init 						создаем базу данных (myproject git init /home/...(путь))
-cat file1.txt							посмотреть содержимое файла в PowerShell
-cp abc.log logs/						добавить в директорию logs файл abc.log
+	mkdir myproject							создаем директорую
+	cd myproject/							заходим в директорию
+	myproject git init 						создаем базу данных (myproject git init /home/...(путь))
+	cat file1.txt							посмотреть содержимое файла в PowerShell
+	cp abc.log logs/						добавить в директорию logs файл abc.log
 
 
-git status								проверка статуса git (коммиты и тд.)
-echo 'source file1' > file1.txt			создали txt файл с текстом
-echo 'asdf' >> file4.txt				добавить в конец новой последней строки текст
-git add *								1 шаг commit для всех файлов с git
-git add file1.txt						1 шаг commit для одного файла
+	git status								проверка статуса git (коммиты и тд.)
+	echo 'source file1' > file1.txt			создали txt файл с текстом
+	echo 'asdf' >> file4.txt				добавить в конец новой последней строки текст
+	git add *								1 шаг commit для всех файлов с git
+	git add file1.txt						1 шаг commit для одного файла
 
 
-git commit -m 'My initial commit'		2 шаг commit, снимок директории
+	git commit -m 'My initial commit'		2 шаг commit, снимок директории
 
 

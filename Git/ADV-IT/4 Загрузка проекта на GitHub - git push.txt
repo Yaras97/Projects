@@ -1,11 +1,7 @@
-git clone https://github.com/Yaras97/Courses_and_practice.git   			создаем копию репозитория с github
-
-Генерация ключа ssh, чтобы входить без повторного ввода пароля и логина (gitbash):	
-ssh-keygen																	генерация ssh ключа в юзере админа
-ssh-keygen -t rsa -b 4096 -C "ваша@почта.com"								генерация ssh ключа
-eval `ssh-agent -s`															добавление ssh-ключа в ssh-agent
-ssh-add ~/.ssh/id_rsa														вторая операция по добавлению
-
-
-Добавление ssh-ключа в уч.запись github(https://only-to-top.ru/blog/tools/2019-12-08-git-ssh-windows.html#:~:text=%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%83%D1%8E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20GitHub.-,%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%20SSH,%D1%81%D0%B2%D0%BE%D0%B9%20%D0%B0%D0%B4%D1%80%D0%B5%D1%81%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BE%D1%87%D1%82%D1%8B%20GitHub.&text=%D0%91%D1%83%D0%B4%D0%B5%D1%82%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%20%D0%BA%D0%BB%D1%8E%D1%87%20ssh%2C%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8F,%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%8C%20%D0%BA%D0%BB%D1%8E%D1%87%C2%BB%2C%20%D0%BD%D0%B0%D0%B6%D0%BC%D0%B8%D1%82%D0%B5%20Enter. ссылка гайда):
-cat ~/.ssh/id_rsa.pub														посмотреть содержимое файла с ssh ключом, чтобы его скопировать
+	git clone https_ссылка_вашего_репозитория
+	echo 'Hello world' > file1.txt
+	git add .
+	git commit -m 'My first commit'
+	git push origin
+	login
+	password

@@ -1,0 +1,14 @@
+Если запушили в Github секретную информацию и нужно ее стереть(чтобы никто не сделал pull как можно быстрее)	
+	git log
+	делаем изменения в репозитории и добавили секретную инф-ю
+	git add .
+	git commit -m "Added something"
+	git push
+
+	git log
+	git reset --hard HEAD~1							удаляем последний commit локально
+	git log
+	cat index.html									условно проверка файла
+	git push origin main --force					откат последнего пуша в main ветку на Github(перезапись истории)
+
+

@@ -1,0 +1,20 @@
+Вывести номера заказов (buy_id) и названия этапов,  на которых они в данный момент находятся. Если заказ доставлен –  информацию о нем не выводить. Информацию отсортировать по возрастанию buy_id.
+
+	select buy_id, name_step
+	    from step
+	        join buy_step using(step_id)
+	where date_step_end is NULL and date_step_beg is not NULL
+	order by 1;
++--------+-----------------+
+| buy_id | name_step       |
++--------+-----------------+
+| 2      | Транспортировка |
+| 3      | Доставка        |
+| 4      | Оплата          |
++--------+-----------------+
+
+
+SELECT buy_id, name_step
+FROM buy_step JOIN step USING(step_id)
+WHERE date_step_beg AND date_step_end IS NULL
+ORDER BY 1;

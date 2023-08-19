@@ -1,0 +1,26 @@
+Переход на определенную версию commit
+	git log
+	type .\index.html
+	git checkout номер_хеша
+
+Возврат обратно на все версии
+	git checkout master
+
+
+Изменение в определенном commit
+	делаем изменения в репозитории
+	git commit --amend					изменения последнего commit
+	insert
+	esc
+	:wq!
+	git log
+
+
+Возврат на прошлую версию с удалением новых версий
+	git reset --hard HEAD~2				удаление 2 последних версий и откат
+	git log
+	type .\index.html
+
+
+Удаление commit-ов из log при сохранение текущей версии commit-а
+	git reset --soft HEAD~3				удаление 3 коммитов из истории

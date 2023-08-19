@@ -1,0 +1,3 @@
+https://gist.github.com/avshatalov48/a9c6d5e3b6492a27362dfffe01b07a10
+https://tproger.ru/translations/beginner-git-cheatsheet/
+https://selectel.ru/blog/tutorials/what-is-git-push-and-how-to-use-it/

@@ -1,0 +1,1 @@
+print(*[i for i in input() if i in "0987654321"], sep='')

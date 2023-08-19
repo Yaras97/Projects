@@ -1,0 +1,52 @@
+Создание пустого репозитория, изменения в нем и создание новой branch
+
+	git init myapp 					создаем пустой репозиторий
+	git branch
+
+	делаем изменения в репозитории
+	git add .
+	git commit -m 'version1.0'
+	git branch						проверка branch
+	git log
+
+	делаем изменения в репозитории
+	git add .
+	git commit -m 'version2.0'
+	git log
+
+	делаем изменения в репозитории
+	git add .
+	git commit -m 'version3.0'
+	git log
+
+Делаем новый branch
+	git branch имя_ветки
+	git branch
+	git branch -d имя_ветки			удаление branch
+
+		git checkout -b имя_ветки		создание и переход на этот branch
+
+	делаем изменения в репозитории
+	git add .
+	git commit -m 'version4.0'
+	git log
+
+Проверка изменений в главной branch:
+	git type .\index.html				проверка файла в доп ветке
+	git chekout master
+	git type .\index.html				проверка в основной ветке, другая (старая) версия
+	git branch
+	git merge имя_ветки					слияние ветки с основной
+	git type .\index.html				обновленная версия уже в основной ветке
+	git branch -d имя_ветки
+
+
+
+
+
+Удаление branch если произведен commit
+	git checkout -b имя_ветки
+	git add .
+	git commit -m 'version xxx'
+
+	git checkout -D имя_ветки			уданеие ветки если есть commit

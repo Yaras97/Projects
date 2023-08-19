@@ -1,0 +1,27 @@
+	git clone ssh_ссылка_репозитория
+	git branch
+	git checkout -b имя_ветки					создаем доп ветку не трогая основную
+	делаем изменения в репозитории
+	git add .
+	git status
+	git commit -m "Added something"
+	git branch
+	git push origin
+		git push --set-upstream origin имя_ветки
+
+Делаем compare & pull request в Github
+Пишем комменты и делаем merge
+Create pull request
+
+
+
+Merge pull request делает человек с доступом для слияния в основную ветку
+Можно посмотреть сравнение через split в review chages
+Принимает confirm merge
+
+
+Удаление branch локально и удаленно в Github
+	git branch
+	git branch -d название_ветки
+
+	git push origin --delete название_ветки

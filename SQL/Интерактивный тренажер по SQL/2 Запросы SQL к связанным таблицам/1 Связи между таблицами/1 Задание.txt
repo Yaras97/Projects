@@ -1,0 +1,24 @@
+Задание
+Создать таблицу author следующей структуры:
+
+Поле			Тип, описание
+author_id		INT PRIMARY KEY AUTO_INCREMENT
+name_author		VARCHAR(50)
+
+	create table author(
+    author_id int primary key auto_increment,
+    name_author varchar(50)
+    );
+
+PostgresSQL
+	create table author(
+    author_id integer primary key generated always as identity,
+    name_author varchar(50)
+    );
+
+
+Так лучше не делать 
+    create table author(
+    author_id SERIAL primary key,
+    name_author varchar(50)
+    );

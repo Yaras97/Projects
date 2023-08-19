@@ -1,0 +1,15 @@
+Работа с gitbash
+
+	ssh-keygen
+	enter
+	enter
+
+Заходим в расположение файла c/users/admin/.ssh/id_rsa и копируем сдержимое файла с ключом id_rsa
+Переходим в настройки аккаунта Github SSH and GPG keys и добавляем наш ключ
+
+Проверка:
+	git clone ssh_ссылка_репозитория
+	делаем изменения в репозитории
+	git add .
+	git commit -m "Added from windows"
+	git push origin

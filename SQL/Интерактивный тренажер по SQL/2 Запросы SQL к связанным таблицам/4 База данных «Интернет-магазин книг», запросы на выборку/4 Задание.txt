@@ -1,0 +1,14 @@
+Вывести номера всех оплаченных заказов и даты, когда они были оплачены.
+
+select buy_id, date_step_end
+    from step
+        join buy_step using(step_id)
+where date_step_end is not NULL and step_id = 1;
+
++--------+---------------+
+| buy_id | date_step_end |
++--------+---------------+
+| 1      | 2020-02-20    |
+| 2      | 2020-02-28    |
+| 3      | 2020-03-05    |
++--------+---------------+

@@ -1,0 +1,5 @@
+file = open('numbers.txt', encoding='utf-8')
+ln = list(map(str.strip, file.readlines()))
+ln = list(map(int, ln))
+print(sum(ln))
+file.close()

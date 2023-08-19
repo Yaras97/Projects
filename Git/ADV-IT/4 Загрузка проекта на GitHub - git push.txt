@@ -1,0 +1,7 @@
+	git clone https_ссылка_вашего_репозитория
+	echo 'Hello world' > file1.txt
+	git add .
+	git commit -m 'My first commit'
+	git push origin
+	login
+	password

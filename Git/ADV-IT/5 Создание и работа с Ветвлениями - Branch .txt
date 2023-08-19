@@ -1,0 +1,35 @@
+git init myapp							создание репозитория myapp с папкой git
+cd .\myapp								зайти в репозиторий myapp
+git bracnh								покажет какие ветки были созданы
+git log 								история всех commit
+
+
+git branch fix_error					создаем ветвление с название fix_error
+git checkout fix_error					переход на ветвление fix_error
+git branch -d fix_error					удаление ветвления fix_error
+git checkout -b yaras_fixerror			создание ветвления yaras_fixerror и сразу переход на нее
+
+
+type .\index.html						просмотр внетренностей файла index.html
+git checkout master						переход на ветку master
+git branch
+git merge yaras_fixerror				слияние ветки yaras_fixerror
+ с золотой копией master
+git branch -d yaras_fixerror			удаление ветки yaras_fixerror
+git branch -D test						удаляет ветку, если есть действующий commit
+
+
+Создаем новую ветку c новыми версиями файла и делаем слияние с золотой копией, после удаление лишнего ветвления:
+echo 'version5' >.\index.html
+git add *
+git commit -m 'version5'
+git status
+git log
+
+git checkout master
+git merge add_link
+
+git branch -d add_link
+git branch
+git log
+

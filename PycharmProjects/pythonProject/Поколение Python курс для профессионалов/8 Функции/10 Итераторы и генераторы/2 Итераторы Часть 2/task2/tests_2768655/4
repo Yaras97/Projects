@@ -1,0 +1,4 @@
+matrix = [[69]]
+
+for row in transpose(matrix):
+    print(row)

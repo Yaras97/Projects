@@ -1,0 +1,53 @@
+Для каждой отдельной книги необходимо вывести информацию о количестве проданных экземпляров и их стоимости за 2020 и 2019 год . Вычисляемые столбцы назвать Количество и Сумма. Информацию отсортировать по убыванию стоимости.
+
+	SELECT title, SUM(Количество) as Количество, SUM(Сумма) as Сумма
+	FROM (
+		SELECT book_id, title, SUM(buy_book.amount) as Количество, SUM(book.price * buy_book.amount) as Сумма
+			FROM buy_book
+				JOIN book USING(book_id)
+				JOIN buy_step USING(buy_id)
+		WHERE date_step_end AND step_id = 1
+		GROUP BY book_id
+		UNION ALL
+		SELECT book_id, title, SUM(buy_archive.amount), SUM(buy_archive.price * buy_archive.amount)
+			FROM buy_archive
+				JOIN book USING(book_id)
+		GROUP BY book_id
+	    ) as qwery
+	GROUP BY 1
+	ORDER BY 3 DESC;
++-----------------------+------------+---------+
+| title                 | Количество | Сумма   |
++-----------------------+------------+---------+
+| Братья Карамазовы     | 8          | 6247.20 |
+| Мастер и Маргарита    | 6          | 4024.38 |
+| Идиот                 | 5          | 2281.80 |
+| Белая гвардия         | 3          | 1581.10 |
+| Черный человек        | 2          | 1140.40 |
+| Лирика                | 2          | 1037.98 |
+| Игрок                 | 2          | 961.80  |
+| Стихотворения и поэмы | 1          | 650.00  |
++-----------------------+------------+---------+
+
+
+
+
+SELECT title, SUM(kol) AS Количество, SUM(summ) AS Сумма 
+FROM book 
+  JOIN (
+    SELECT book_id, SUM(amount) AS kol, SUM(amount * price) AS summ 
+    FROM buy_archive 
+GROUP BY book_id 
+UNION 
+SELECT book_id, SUM(buy_book.amount), SUM(buy_book.amount * book.price) 
+FROM buy_book 
+	JOIN book USING(book_id) 
+	JOIN buy_step USING(buy_id) 
+WHERE step_id = 1 AND date_step_end IS NOT Null 
+GROUP BY book_id) query_1 USING(book_id) 
+GROUP BY title 
+ORDER BY Сумма DESC
+
+
+
+

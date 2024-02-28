@@ -1,0 +1,44 @@
+a = [4, 5, 34]
+s = 'ggfd'
+type(s)
+<class 'str'>
+type(5)
+<class 'int'>
+type(4.5)
+<class 'float'>
+type((5, 43, 3))
+<class 'tuple'>
+isinstance(4, int)
+True
+isinstance(4, float)
+False
+isinstance(4, object)
+True
+isinstance(True, object)
+True
+isinstance([43, 3], object)
+True
+isinstance(int, object)
+True
+type(int)
+<class 'type'>
+isinstance(list, object)
+True
+a
+[4, 5, 34]
+class Car:
+    pass
+a = Car()
+a
+<__main__.Car object at 0x000001CFDE552890>
+type(a)
+<class '__main__.Car'>
+isinstance(a, Car)
+True
+b = Car()
+class Car:
+    model = "BMW"
+    engine = 1.6
+    
+c = Car()
+d = Car()

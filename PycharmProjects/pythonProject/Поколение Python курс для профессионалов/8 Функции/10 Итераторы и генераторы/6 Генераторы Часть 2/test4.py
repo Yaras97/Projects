@@ -1,0 +1,5 @@
+generator = (char.upper() for char in 'stepik')
+next(generator)
+next(generator)
+next(generator)
+print(list(generator))

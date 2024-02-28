@@ -1,0 +1,6 @@
+print(reversed('123'))
+print(reversed((1, 2, 3)))
+# reversed(map(abs, [-1, -2, -3]))
+print(reversed([1, 2, 3]))
+# reversed({1, 2, 3})
+print(reversed({'one': 1, 'two': 2}))

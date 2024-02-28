@@ -1,0 +1,3 @@
+data = iter(['bbb'])
+
+print(get_min_max(data))

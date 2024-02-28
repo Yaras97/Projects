@@ -1,0 +1,3 @@
+data = iter(['a', 'b', 'c', 'aaa', 'abc', 'cbc', 'bbb'])
+
+print(get_min_max(data))

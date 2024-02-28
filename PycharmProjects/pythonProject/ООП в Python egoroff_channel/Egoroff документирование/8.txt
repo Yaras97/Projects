@@ -1,0 +1,24 @@
+class Cat:
+    breed = 'pers'
+    
+a = Cat()
+b = Cat()
+a.breed = 'siam'
+b.color = 'black'
+c = Cat()
+b.__dict__
+{'color': 'black'}
+class Cat:
+    __shred_attr = {
+        'breed': 'pers',
+        'color': 'black'
+    }
+    def __init__(self):
+        self.__dict__ = Cat.__shred_attr
+        
+d = Cat()
+g = Cat()
+d.breed = 'siam'
+d.name = 'Bob'
+h = Cat()
+

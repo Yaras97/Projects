@@ -1,0 +1,6 @@
+numbers = [1, 2, 3, 4, 5]
+iterator = iter(numbers)
+del numbers[0]
+del numbers[1]
+print(next(iterator))
+print(numbers)

@@ -1,0 +1,6 @@
+attrdict = AttrDict({'name': 'Timur', 'city': 'Moscow'})
+
+attrdict['city'] = 'Dubai'
+attrdict['age'] = 31
+print(attrdict.city)
+print(attrdict.age)

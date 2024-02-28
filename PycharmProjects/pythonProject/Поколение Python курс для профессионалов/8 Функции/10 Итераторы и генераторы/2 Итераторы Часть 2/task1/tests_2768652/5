@@ -1,0 +1,4 @@
+import string
+letters = string.ascii_letters
+result = filterfalse(lambda char: ord(char) > 75, letters)
+print(*result, sep=',')

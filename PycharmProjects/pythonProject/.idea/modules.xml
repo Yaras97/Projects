@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/pythonProject.iml" filepath="$PROJECT_DIR$/.idea/pythonProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../python_tasks/.idea/python_tasks.iml" filepath="$PROJECT_DIR$/../python_tasks/.idea/python_tasks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ООП/.idea/ООП Python.iml" filepath="$PROJECT_DIR$/../ООП/.idea/ООП Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ООП Шапошникова/.idea/ООП Шапошникова.iml" filepath="$PROJECT_DIR$/../ООП Шапошникова/.idea/ООП Шапошникова.iml" />
+      <module fileurl="file://D:/Pogramming/Python/ООП в Python egoroff_channel/.idea/ООП в Python egoroff_channel.iml" filepath="D:/Pogramming/Python/ООП в Python egoroff_channel/.idea/ООП в Python egoroff_channel.iml" />
+    </modules>
+  </component>
+</project>

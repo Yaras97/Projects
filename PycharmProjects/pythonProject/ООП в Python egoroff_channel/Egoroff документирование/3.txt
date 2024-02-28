@@ -1,0 +1,49 @@
+class Car:
+    model = 'BMW'   
+    engine = 1.6
+    
+a1 = Car()
+a2 = Car()
+Car.__dict__
+mappingproxy({'__module__': '__main__', 'model': 'BMW', 'engine': 1.6, '__dict__': <attribute '__dict__' of 'Car' objects>, '__weakref__': <attribute '__weakref__' of 'Car' objects>, '__doc__': None, '__annotations__': {}})
+a1.model
+'BMW'
+a1.engine
+1.6
+a1.__dict__
+{}
+a2.__dict__
+{}
+a1.seat = 4
+a1.__dict__
+{'seat': 4}
+a2.__dict__
+{}
+Car.__dict__
+mappingproxy({'__module__': '__main__', 'model': 'BMW', 'engine': 1.6, '__dict__': <attribute '__dict__' of 'Car' objects>, '__weakref__': <attribute '__weakref__' of 'Car' objects>, '__doc__': None, '__annotations__': {}})
+a1.model = "Lada"
+a1.__dict__
+{'seat': 4, 'model': 'Lada'}
+a1.model
+'Lada'
+a1.engine
+1.6
+a1.size
+
+AttributeError: 'Car' object has no attribute 'size'
+a2.size = 80
+a2.size 
+80
+Car.size 
+
+AttributeError: type object 'Car' has no attribute 'size'
+Car.r = 100
+a1.r
+100
+a2.r
+100
+a1.__dict__
+{'seat': 4, 'model': 'Lada'}
+del a1.model
+a1.model
+'BMW'

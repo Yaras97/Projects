@@ -1,0 +1,5 @@
+attrdict = AttrDict()
+
+attrdict['school_name'] = 'BEEGEEK'
+print(attrdict['school_name'])
+print(attrdict.school_name)

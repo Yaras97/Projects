@@ -1,0 +1,3 @@
+objects = [0, 0, 0, True, False, 1788, [], {}, set(), (), '', 0.0, None, 'stepik', dict()]
+
+print(*filterfalse(None, objects))

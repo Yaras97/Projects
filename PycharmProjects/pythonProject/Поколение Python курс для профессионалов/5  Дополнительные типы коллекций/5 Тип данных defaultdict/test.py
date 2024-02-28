@@ -1,0 +1,10 @@
+from collections import defaultdict
+print(defaultdict(int, name='Timur', surname='Guev', hobby='math'))
+print(defaultdict(name='Timur', surname='Guev', hobby='math'))
+print(defaultdict(int, {'name': 'Timur', 'surname': 'Guev', 'hobby': 'math'}))
+print(defaultdict())
+print(defaultdict(list))
+print(defaultdict(int, [('name', 'Timur'), ('surname', 'Guev'), ('hobby', 'math')]))
+# defaultdict({'name': 'Timur', 'surname': 'Guev', 'hobby': 'math'})
+print(defaultdict(None))
+print(defaultdict.fromkeys(['name', 'surname', 'hobby'], None))

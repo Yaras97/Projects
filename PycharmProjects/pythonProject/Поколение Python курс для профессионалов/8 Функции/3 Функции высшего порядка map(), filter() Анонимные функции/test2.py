@@ -1,0 +1,5 @@
+numbers = map(abs, [-1, 2, -3, 4, -5])
+result1 = list(numbers)
+result2 = list(numbers)
+print(result1)
+print(result2)

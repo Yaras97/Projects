@@ -1,0 +1,22 @@
+class Triangle:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def perimeter(self):
+        return self.a + self.b + self.c
+
+
+class EquilateralTriangle(Triangle):
+    def __init__(self, side):
+        super().__init__(side, side, side)
+
+
+digits = [44, 143, 173, 116, 191, 78, 162, 60, 125, 27, 65, 43, 55, 84, 101, 91, 55, 57, 74, 64, 48, 133, 129, 171, 58,
+          103, 80, 112, 45, 61, 159, 167, 42, 119, 131, 143, 91, 58, 26, 40, 59, 120, 168, 125, 27, 144, 130, 179, 63,
+          168]
+
+for side in digits:
+    equilateraltriangle = EquilateralTriangle(side)
+    print(equilateraltriangle.perimeter())

@@ -1,0 +1,5 @@
+attrdict = AttrDict({'name': 'X Æ A-12', 'father': 'Elon Musk'})
+
+print(attrdict['name'])
+print(attrdict.father)
+print(len(attrdict))

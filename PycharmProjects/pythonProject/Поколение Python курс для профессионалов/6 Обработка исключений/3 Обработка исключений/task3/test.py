@@ -1,0 +1,8 @@
+'''
+ball,color,purple
+ball,size,4
+ball,notes,it's round
+cup,color,blue
+cup,size,1
+cup,notes,none
+'''

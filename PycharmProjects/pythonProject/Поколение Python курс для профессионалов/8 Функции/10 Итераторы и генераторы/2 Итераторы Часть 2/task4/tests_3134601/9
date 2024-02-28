@@ -1,0 +1,3 @@
+iterable = []
+
+print(get_min_max(iterable))

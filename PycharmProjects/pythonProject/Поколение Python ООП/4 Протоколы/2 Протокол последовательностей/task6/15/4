@@ -1,0 +1,7 @@
+d = AttrDict()
+d.name = 'Leonardo da Vinci'
+
+try:
+    print(d['name'])
+except KeyError:
+    print('Ключ отсутствует')

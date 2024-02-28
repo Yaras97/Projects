@@ -1,0 +1,5 @@
+letters = iter('beegeek')
+next(letters)
+next(letters)
+next(letters)
+print(next(letters))
